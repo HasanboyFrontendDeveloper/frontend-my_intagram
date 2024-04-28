@@ -1,0 +1,121 @@
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  height: 100vh;
+  background-color: #fff;
+  .signup-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    width: 350px;
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    img {
+      width: 175px;
+    }
+    .quote {
+      text-align: center;
+      padding: 20px;
+      color: #737373;
+    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+      padding-bottom: 20px;
+      .form-group {
+        position: relative;
+        //   margin-bottom: 20px;
+        height: 36px;
+
+        input {
+          width: 258px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid rgba(0, 0, 0, 0.205);
+          border-radius: 5px;
+          padding: 9px 0px 7px 8px;
+          outline: none;
+          transition: border-color 0.3s ease;
+          font-size: 16px;
+
+          &:focus {
+            border-color: #333;
+          }
+
+          &:not(:placeholder-shown) + label {
+            top: -1px;
+            font-size: 11px;
+            color: #333333cb;
+          }
+        }
+
+        label {
+          position: absolute;
+          left: 10px;
+          top: 8px;
+          font-size: 16px;
+          color: #7c7c7c;
+          transition: top 0.3s ease, font-size 0.3s ease;
+          pointer-events: none; // Prevent label from blocking input focus
+        }
+        .check{
+          position: absolute;
+          right: 5px;
+          top: 8px;
+        }
+        .showPass {
+          position: absolute;
+          right: 5px;
+          top: 8px;
+          font-size: 15px;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          &:hover {
+            color: rgba(0, 0, 0, 0.336);
+          }
+        }
+      }
+      .btn {
+        margin: 8px 40px;
+        width: 268px;
+        height: 32px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background: #3883e6;
+        cursor: pointer;
+      }
+      p {
+        text-align: center;
+        font-size: 12px;
+        padding: 0 20px;
+        padding-top: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: rgba(0, 0, 255, 0.74);
+      }
+    }
+  }
+  .login-section {
+    width: 350px;
+    height: 63px;
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+  }
+}
